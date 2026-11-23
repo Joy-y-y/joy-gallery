@@ -1,59 +1,11 @@
 {
-  "name": "Joy",
+  "name": "Joy Gallery",
   "subtitle": "Joy's AltStore / SideStore source",
   "description": "Static AltStore / SideStore source. App metadata, icons, screenshots and IPA download links are reused from public open-source projects (mirrored from AltGallery); replace them with your own before publishing.",
   "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/assets/icon.png",
   "website": "https://github.com/Joy-y-y/joy-gallery",
   "tintColor": "#3B82F6",
   "apps": [
-    {
-      "name": "Aidoku",
-      "bundleIdentifier": "app.aidoku.Aidoku",
-      "developerName": "Skitty",
-      "subtitle": "Free and open source manga reader for iOS and iPadOS",
-      "localizedDescription": "A free and open source manga reading application for iOS and iPadOS.",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Aidoku/icon.png",
-      "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Aidoku/images/library.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Aidoku/images/source.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Aidoku/images/reader.png"
-      ],
-      "tintColor": "#FF375F",
-      "versions": [
-        {
-          "version": "0.9",
-          "date": "2026-10-16T22:25:27Z",
-          "localizedDescription": "A small build update for 0.9 with a number of bug fixes.\r\n\r\n- Fixed some pages not loading in webtoon reader\r\n- Improved webtoon reader memory usage (hopefully fixes crash after reading multiple chapters)\r\n- Fixed crash when searching anywhere in the macOS app\r\n- Various other bug fixes",
-          "downloadURL": "https://github.com/Aidoku/Aidoku/releases/download/v0.9-4/Aidoku.ipa",
-          "size": 14753154,
-          "minOSVersion": "15.0"
-        }
-      ]
-    },
-    {
-      "name": "AirCard-iOS",
-      "bundleIdentifier": "com.mak5er.aircard",
-      "developerName": "Mak5er",
-      "subtitle": "Apple Wallet card skins, passcode themes and wallpapers",
-      "localizedDescription": "Customize Apple Wallet card artwork, lock screen passcode dialers and PosterBoard wallpapers directly on device, without a jailbreak. Requires iOS 27 or newer, LocalDevVPN running in loopback mode, and Developer Mode pairing.",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/AirCard/icon.png",
-      "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/AirCard/images/wallet.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/AirCard/images/pairing.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/AirCard/images/wallpapers.png"
-      ],
-      "tintColor": "#5020E0",
-      "versions": [
-        {
-          "version": "1.3.2",
-          "date": "2026-10-04T12:22:53Z",
-          "localizedDescription": "## What's Changed in v1.3.2 🚀\n\nThis update brings full feature parity with AirCard macOS v1.2.6, restores robust card discovery across all iOS versions, introduces automatic bank/network recognition with custom card nicknames, delivers an ultra-fast tunnel cache (0.02s connections), and completely resolves wallpaper flashing for Collections and Mercury wallpapers.\n\n### 💳 Wallet Card Discovery & Bank Identification\n• **Universal Wallet Log Parser**: Ported the proven `WalletScanParser` from AirCard macOS. Captures cards from `Dashboard loading (...): for SOO+`, `passIDs[InSession]`, `passIDs[global]`, and modern JSON NFC activations (`\"identifier\": \"HEX\"`).\n• **Automatic Bank & Network Detection**: Recognizes Visa, Mastercard, American Express, UnionPay, Discover, and JCB via applet AIDs during selection.\n• **Card Nicknames (Rename)**: Added a direct **Rename** button (✏️) so you can give your cards friendly names like *\"Monobank\"*, *\"Salary Card\"*, or *\"Revolut\"*, safely persisted in app settings.\n• **28-Character Fallback Token Matcher**: Restores dependable card discovery on devices where standard log patterns are redacted.\n\n### ⚡ Ultra-Fast Tunnel Routing (from 10s to 0.02s!)\n• **Working Route Caching**: `rust-core` now caches the active RSD connection route (`LAST_WORKING_ROUTE`), eliminating repeated port and interface scanning.\n• **RSD-First Priority**: Connects directly via RemoteXPC on port 49152, bypassing slow Lockdown retries and broken pipes on iOS 18+.\n• **Eliminated Loopback Policy Drops**: Removed local loopback attempts that caused `policy drop` control channel errors.\n\n### 🖼 Wallpapers (.tendies) — Collections & Mercury Fixes\n• **Dual Injection on iOS 18+**: Wallpapers are now injected into both their primary bundle (`com.apple.WallpaperKit.CollectionsPoster` or `com.apple.MercuryPoster`) and the modern iOS 18+ application container (`com.apple.Posters.CollectionsPosterApp` / `com.apple.Posters.MercuryPosterApp`).\n• **Metadata Synchronization**: Fixed a critical issue where `Wallpaper.plist`'s numeric identifier was randomized out-of-sync with `suggestionMetadata.plist` (`7400.DYNAMIC`), causing wallpapers like Windows 11 to vanish from the Lock Screen gallery.\n• **Mercury Wallpaper Support**: Added recognition for `mercury-descriptors` container folders and registered `com.apple.Posters.MercuryPosterApp` in `PersistedPosterContainerBundleIdentifiers`.\n• **NeoSpring Respring**: Instant springboard reload to apply wallpaper preferences immediately.\n\n### 🧪 Quality & Testing\n• All 24 unit tests passing (`TendiesEngineTests`, `WalletScanParserTests`, `CardPhotoCropTests`, `CardPhotoPickerTests`).\n\n**Full Changelog**: https://github.com/Mak5er/AirCard-iOS/compare/v1.3.1...v1.3.2",
-          "downloadURL": "https://github.com/Mak5er/AirCard-iOS/releases/download/v1.3.2/AirCard-iOS.ipa",
-          "size": 4638147,
-          "minOSVersion": "27.0"
-        }
-      ]
-    },
     {
       "name": "AltStore",
       "bundleIdentifier": "com.rileytestut.AltStore",
@@ -277,29 +229,6 @@
       ]
     },
     {
-      "name": "Breeze",
-      "bundleIdentifier": "com.zephyr.breeze",
-      "developerName": "deretame",
-      "subtitle": "使用 Flutter 开发的插件化漫画阅读器",
-      "localizedDescription": "使用 Flutter 构建的跨平台漫画阅读器，漫画源以插件形式提供，内置插件商店，支持本地与云收藏。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Breeze/icon.png",
-      "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Breeze/images/home.jpeg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Breeze/images/plugin.jpeg"
-      ],
-      "tintColor": "#E03030",
-      "versions": [
-        {
-          "version": "3.1.0",
-          "date": "2026-11-21T13:52:36Z",
-          "localizedDescription": "## 📝 更新日志\r\n## [v3.1.0]\r\n\r\n### 功能更新\r\n\r\n- 添加鸿蒙（HarmonyOS NEXT）支持\r\n- 添加导入外部漫画功能，支持文件夹与 CBZ / CBR / CB7 / CBT 等压缩包\r\n- 编辑已下载漫画时支持导入章节与图片、编辑分卷\r\n- 外观设置新增「漫画详情页」样式，可分别隐藏点赞、评论、本地收藏与云收藏按钮\r\n- 新增显示滚动条与滚动条常驻开关\r\n- 同步设置支持自定义自动同步间隔\r\n- 阅读设置新增「条漫放大后连续滚动」实验性开关 by [0kitasan](https://github.com/0kitasan)\r\n\r\n### 修复\r\n\r\n- 修复书架文件夹的漫画数量不随来源筛选变化的问题\r\n- 修复下载任务重启后进度丢失的问题\r\n- 修复不包含下载内容的备份无法导入的问题\r\n\r\n### 优化\r\n\r\n- 优化插件启动速度\r\n- 优化内存占用\r\n\r\n### ui调整\r\n\r\n- 调整部分ui样式\r\n\r\n### 杂项\r\n\r\n- 数据存储全面迁移到 SQLite\r\n\r\n---\r\n\r\n### 📦 推荐下载\r\n| 平台 | 下载链接 |\r\n| :--- | :--- |\r\n| **Windows** | [windows-installer-v3.1.0.exe](https://github.com/breeze-project-org/Breeze/releases/download/v3.1.0/windows-installer-v3.1.0.exe) |\r\n| **macOS** | [Breeze-macOS-v3.1.0.dmg](https://github.com/breeze-project-org/Breeze/releases/download/v3.1.0/Breeze-macOS-v3.1.0.dmg) |\r\n| **Android** | [app-arm64-v8a-release-v3.1.0.apk](https://github.com/breeze-project-org/Breeze/releases/download/v3.1.0/app-arm64-v8a-release-v3.1.0.apk) |\r\n| **iOS** | [Breeze-iOS-v3.1.0.ipa](https://github.com/breeze-project-org/Breeze/releases/download/v3.1.0/Breeze-iOS-v3.1.0.ipa) |\r\n| **Linux** | [breeze-v3.1.0.flatpak](https://github.com/breeze-project-org/Breeze/releases/download/v3.1.0/breeze-v3.1.0.flatpak) |\r\n| **Linux (DEB)** | [breeze_3.1.0_amd64-v3.1.0.deb](https://github.com/breeze-project-org/Breeze/releases/download/v3.1.0/breeze_3.1.0_amd64-v3.1.0.deb) |\r\n| **HarmonyOS** | [Breeze-ohos-arm64-v3.1.0.hap](https://github.com/breeze-project-org/Breeze/releases/download/v3.1.0/Breeze-ohos-arm64-v3.1.0.hap) |\r\n\r\n> 💡 **不知道该下载哪个文件？**\r\n> 请查看 [详细安装指南](https://github.com/breeze-project-org/Breeze#-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85)。",
-          "downloadURL": "https://github.com/breeze-project-org/Breeze/releases/download/v3.1.0/Breeze-iOS-v3.1.0.ipa",
-          "size": 27861953,
-          "minOSVersion": "15.0"
-        }
-      ]
-    },
-    {
       "name": "Cloudn",
       "bundleIdentifier": "com.mengangs.Cloudn",
       "developerName": "mengangs",
@@ -320,30 +249,6 @@
           "downloadURL": "https://github.com/mengangs/Cloudn/releases/download/v1.4.2/Cloudn-v1.4.2.ipa",
           "size": 9034290,
           "minOSVersion": "17.0"
-        }
-      ]
-    },
-    {
-      "name": "Dartotsu",
-      "bundleIdentifier": "ani.aayush262.dartotsu",
-      "developerName": "aayush2622",
-      "subtitle": "Multiplatform anime and manga tracking client",
-      "localizedDescription": "A Flutter rewrite of Dantotsu: track and manage your anime, manga and novel lists across AniList, MyAnimeList, Simkl, Kitsu, MangaBaka and MangaUpdates, on Android, iOS, Windows, Linux and macOS.",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Dartotsu/icon.png",
-      "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Dartotsu/images/home.webp",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Dartotsu/images/anime.webp",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Dartotsu/images/manga.webp"
-      ],
-      "tintColor": "#20C0F0",
-      "versions": [
-        {
-          "version": "1.2.1",
-          "date": "2026-11-10T09:17:52Z",
-          "localizedDescription": "### 🎉 New Features\n* [4ac32da0](https://github.com/aayush2622/Dartotsu/commit/4ac32da0): feat: editable keyboard shortcuts for the app, player and reader with a settings screen and per group switches\n* [51b1a2d7](https://github.com/aayush2622/Dartotsu/commit/51b1a2d7): feat: community lists, disable skips, hoster grouping, Simkl movies & series mode\n* [5d387f41](https://github.com/aayush2622/Dartotsu/commit/5d387f41): feat: add Anime-Planet service, private-aware list sync and prequel/sequel cards\n* [5a5a3731](https://github.com/aayush2622/Dartotsu/commit/5a5a3731): feat: finished videos move into the chosen folder and play through a file descriptor\n* [00421b14](https://github.com/aayush2622/Dartotsu/commit/00421b14): feat: ask for a folder whenever something needs saving and no storage permission or folder is set\n* [6ef84d60](https://github.com/aayush2622/Dartotsu/commit/6ef84d60): feat: pick a storage folder with the system picker instead of all-files access, finished downloads, backups and screenshots are copied there; content:// files open\n* [3cffd5c7](https://github.com/aayush2622/Dartotsu/commit/3cffd5c7): feat: stream links reach the player, watch and download pickers as providers find them\n* [4d6961be](https://github.com/aayush2622/Dartotsu/commit/4d6961be): feat: offline fallback for AniList via static media index CDN (#175)\n* [dfd3d7fd](https://github.com/aayush2622/Dartotsu/commit/dfd3d7fd): feat: external players get the stream's subtitles and audio tracks\n* [d07d1117](https://github.com/aayush2622/Dartotsu/commit/d07d1117): feat: player keyboard shortcuts follow the mouse, player or page\n* [d97fd820](https://github.com/aayush2622/Dartotsu/commit/d97fd820): feat: DASH streams download with quality and audio choice instead of failing as HLS\n* [7f6164ed](https://github.com/aayush2622/Dartotsu/commit/7f6164ed): feat: add frostnova721's contributor banner\n* [385a8e59](https://github.com/aayush2622/Dartotsu/commit/385a8e59): feat: app version and build in the log header\n* [f2811aa5](https://github.com/aayush2622/Dartotsu/commit/f2811aa5): feat: subtitle outline width setting and a live subtitle preview in player settings\n* [bf7662af](https://github.com/aayush2622/Dartotsu/commit/bf7662af): feat: option to hide 18+ sources from the extension feeds and source picker\n* [47dff820](https://github.com/aayush2622/Dartotsu/commit/47dff820): feat: download several subtitles and audio tracks per episode\n* [861ddccb](https://github.com/aayush2622/Dartotsu/commit/861ddccb): feat: select several downloads and delete them together\n* [d1b85ee0](https://github.com/aayush2622/Dartotsu/commit/d1b85ee0): feat: ask for the app language in onboarding, preselecting the device language\n* [7c3eaa19](https://github.com/aayush2622/Dartotsu/commit/7c3eaa19): feat: not-in-list search filter for AniList and chapter counts on search cards\n* [c351332c](https://github.com/aayush2622/Dartotsu/commit/c351332c): feat: placeholder rows for extensions that are still converting\n* [800c783a](https://github.com/aayush2622/Dartotsu/commit/800c783a): feat: drag the score badge, airing dot and unread counter onto separate poster corners\n* [f8b9a1c7](https://github.com/aayush2622/Dartotsu/commit/f8b9a1c7): feat: Discord settings overhaul with live preview, account sign-in on desktop, status control, text/image/button options and synced token\n* [56fe3a94](https://github.com/aayush2622/Dartotsu/commit/56fe3a94): feat: Android 16 Live Update progress notification for downloads\n* [3cc17a7f](https://github.com/aayush2622/Dartotsu/commit/3cc17a7f): feat: fade the main screen in on app open\n* [857fc05c](https://github.com/aayush2622/Dartotsu/commit/857fc05c): feat: comment cards use the episode entrance animation\n* [4703649a](https://github.com/aayush2622/Dartotsu/commit/4703649a): feat: tidier What to sync panel with grouped changed settings, colour swatches and a show-all toggle\n* [7b0f037c](https://github.com/aayush2622/Dartotsu/commit/7b0f037c): feat: move gist sync from General to Account settings\n* [d0ae4a7b](https://github.com/aayush2622/Dartotsu/commit/d0ae4a7b): feat: resume shelf shows the episode thumbnail, falling back to the cover, with a live player frame on close\n* [01b44448](https://github.com/aayush2622/Dartotsu/commit/01b44448): feat: unread counter only on continue shelves, status corner setting and calendar button on every browse tab\n* [ccd1bc0f](https://github.com/aayush2622/Dartotsu/commit/ccd1bc0f): feat: UPI pay link on the donate sheet\n* [d641ae1c](https://github.com/aayush2622/Dartotsu/commit/d641ae1c): feat: auto subtitle selection with language matching and a visible selection\n* [2943f03d](https://github.com/aayush2622/Dartotsu/commit/2943f03d): feat: resume thumbnails fall back to the cover and sync their urls\n* [eebdea99](https://github.com/aayush2622/Dartotsu/commit/eebdea99): feat: per-device sync switches for subtitle look, picture colours and theme colours\n* [4694b8ff](https://github.com/aayush2622/Dartotsu/commit/4694b8ff): feat: open the site in the web view from failed manga pages and chapters\n* [8f81fea2](https://github.com/aayush2622/Dartotsu/commit/8f81fea2): feat: unread counter in the card style and the last retrieved chapter count\n* [d268eae3](https://github.com/aayush2622/Dartotsu/commit/d268eae3): feat: add unread/unwatched counter badges and manga release calendar (#173)\n\n### 🛠️ Bug Fixes & Improvements\n* [211f4e22](https://github.com/aayush2622/Dartotsu/commit/211f4e22): fix: android compiles notification plugins against sdk 37 and keeps androidx core on 1.18 elsewhere [build.apk]\n* [2320a4f5](https://github.com/aayush2622/Dartotsu/commit/2320a4f5): fix: cargokit plugins stay on compile sdk 36 so their build script can read it [build.apk]\n* [b73e2139](https://github.com/aayush2622/Dartotsu/commit/b73e2139): fix: android plugins compile against sdk 37 for androidx core 1.19\n* [90184d5b](https://github.com/aayush2622/Dartotsu/commit/90184d5b): fix: the lock screen fits landscape and every scroll view uses the shared scroll config\n* [f458235c](https://github.com/aayush2622/Dartotsu/commit/f458235c): fix: the scroll to top button hides while idle and glass page transitions are shorter\n* [c038c380](https://github.com/aayush2622/Dartotsu/commit/c038c380): fix: blur and page transitions are lighter, the top bar only blurs once collapsed and settings pages skip their entrance animation\n* [6dde0fd2](https://github.com/aayush2622/Dartotsu/commit/6dde0fd2): fix: the reply buttons wrap instead of being cut off in deep comment threads\n* [af39c564](https://github.com/aayush2622/Dartotsu/commit/af39c564): fix: instant sync only looks up ids a target is missing and logs why a push was skipped\n* [dc2adcd0](https://github.com/aayush2622/Dartotsu/commit/dc2adcd0): fix: reader pages blocked by Cloudflare retry after clearing, streams that won't open skip to the next one and the source in use is the only one that opens the challenge page\n* [643029e4](https://github.com/aayush2622/Dartotsu/commit/643029e4): fix: the Windows web view keeps keyboard focus, the Anime-Planet read-only note only shows when signed out and Kotatsu repositories can import a jar file\n* [c61445d9](https://github.com/aayush2622/Dartotsu/commit/c61445d9): fix: circular clips use the best edge smoothing\n* [d3b123e3](https://github.com/aayush2622/Dartotsu/commit/d3b123e3): fix: home stat buttons are smaller and quieter and the banner header leaves less empty space\n* [81fda763](https://github.com/aayush2622/Dartotsu/commit/81fda763): fix: detail followers labels are sentence case, empty scores are hidden and TV formats keep their case\n* [3a1b906b](https://github.com/aayush2622/Dartotsu/commit/3a1b906b): fix: primary and secondary containers lean toward the theme primary\n* [8f3208d4](https://github.com/aayush2622/Dartotsu/commit/8f3208d4): fix: navbar d-pad focus is a pill sized like the selected item\n* [6159fc06](https://github.com/aayush2622/Dartotsu/commit/6159fc06): fix: drop colour glows and the hue gradient, lower heavy weights, snap radii to the 4px grid, trim exclamation copy\n* [316e0bd6](https://github.com/aayush2622/Dartotsu/commit/316e0bd6): fix: Saikou secondary colours are purple and the selected navbar item follows the theme primary\n* [6ce6f8c8](https://github.com/aayush2622/Dartotsu/commit/6ce6f8c8): fix: auto sync runs when the app resumes and instant sync updates the sync plan\n* [462c1dfe](https://github.com/aayush2622/Dartotsu/commit/462c1dfe): fix: default audio and subtitle tracks are selected explicitly and shown as active\n* [b6087ec2](https://github.com/aayush2622/Dartotsu/commit/b6087ec2): fix: AniList requests queue and retry on rate limits, split mode stacks two rows per request, hidden tabs reload only when shown\n* [3579c803](https://github.com/aayush2622/Dartotsu/commit/3579c803): fix: resolve CodeFactor issues and move custom list filters into tabs\n* [1399d0fa](https://github.com/aayush2622/Dartotsu/commit/1399d0fa): fix: chosen-folder storage logs every step and falls back to app storage when the folder is unreachable\n* [838db4ef](https://github.com/aayush2622/Dartotsu/commit/838db4ef): fix: local files stay out of Resume\n* [cefeab3a](https://github.com/aayush2622/Dartotsu/commit/cefeab3a): fix: player falls back to the first sub/audio track, studio and author open from Details, notification toggles refresh, novel images follow the book's sizing, no disk demuxer cache on mobile\n* [03aeb4c6](https://github.com/aayush2622/Dartotsu/commit/03aeb4c6): fix: AniList stale-data flag lives on AnilistMedia instead of the shared Media\n* [3901c95e](https://github.com/aayush2622/Dartotsu/commit/3901c95e): fix: synopsis divider, manga chapter count, copy on long press for title and synonyms\n* [e909a9bb](https://github.com/aayush2622/Dartotsu/commit/e909a9bb): fix: start year filter applies to manga and novel searches\n* [9eb07e6d](https://github.com/aayush2622/Dartotsu/commit/9eb07e6d): fix: search filter chips fade at the edge instead of clipping\n* [70b07c76](https://github.com/aayush2622/Dartotsu/commit/70b07c76): fix: novel translation no longer throws a RangeError when pages are rebuilt\n* [11154c17](https://github.com/aayush2622/Dartotsu/commit/11154c17): fix: sources without a website no longer open or probe a NONE address\n* [7efe4707](https://github.com/aayush2622/Dartotsu/commit/7efe4707): fix: a preference write that collides with another Isar write is retried instead of lost\n* [83a5a993](https://github.com/aayush2622/Dartotsu/commit/83a5a993): fix: extension feeds never open the Cloudflare challenge page on their own\n* [7c5607b2](https://github.com/aayush2622/Dartotsu/commit/7c5607b2): fix: share card shows the app logo and placeholder sources are hidden from the source lists\n* [24dfea5a](https://github.com/aayush2622/Dartotsu/commit/24dfea5a): fix: media lists remember their sort order and direction\n* [0f756cb6](https://github.com/aayush2622/Dartotsu/commit/0f756cb6): fix: shelves use PosterCard.item and skip the card entrance animation when built mid-scroll\n* [33a0ad0d](https://github.com/aayush2622/Dartotsu/commit/33a0ad0d): fix: every media card is built from the same shelf item through PosterCard.item\n* [5ca3ab9d](https://github.com/aayush2622/Dartotsu/commit/5ca3ab9d): fix: saved frames, share cards, list exports and backups go to the default storage folder instead of asking for a path\n* [731a380c](https://github.com/aayush2622/Dartotsu/commit/731a380c): fix: search cards use the same item mapping as the shelves\n* [c7733b15](https://github.com/aayush2622/Dartotsu/commit/c7733b15): fix: selected navbar item follows the theme's primary colour\n* [79015c18](https://github.com/aayush2622/Dartotsu/commit/79015c18): fix: build the home feed a screen and a half ahead to avoid the first-scroll hitch\n* [acfd3e22](https://github.com/aayush2622/Dartotsu/commit/acfd3e22): fix: port window handling to window_manager 0.6, keep fl_pip on 3.x and give the dev shell libXi and a hook-visible pkg-config\n* [59a26ca3](https://github.com/aayush2622/Dartotsu/commit/59a26ca3): fix: make the banner carousel fade fully opaque before its bottom edge\n* [f2d24e9c](https://github.com/aayush2622/Dartotsu/commit/f2d24e9c): fix: a failing search term falls through to the next term when matching a source\n* [6e38cb68](https://github.com/aayush2622/Dartotsu/commit/6e38cb68): fix: a reader page that cannot be decoded shows the failure card instead of the error screen\n* [5f0739de](https://github.com/aayush2622/Dartotsu/commit/5f0739de): fix: the picture sheet scrolls in landscape and the preferred audio track is picked once late-listed tracks appear\n* [2908e19d](https://github.com/aayush2622/Dartotsu/commit/2908e19d): fix: reader load sheet error state no longer overflows\n* [ac6e5616](https://github.com/aayush2622/Dartotsu/commit/ac6e5616): fix: Discord preview uses the app name without an account and the member row matches Discord\n* [c5d5db96](https://github.com/aayush2622/Dartotsu/commit/c5d5db96): fix: call the Android 16 promoted-notification builder methods by reflection so CI's SDK compiles\n* [05b61a6a](https://github.com/aayush2622/Dartotsu/commit/05b61a6a): fix: contributors skeleton shows bones for avatar and text instead of one block\n* [daeeef03](https://github.com/aayush2622/Dartotsu/commit/daeeef03): fix: make the glass theme cheap — blur only on floating surfaces, one-widget cards, native background decode\n* [0ccc564f](https://github.com/aayush2622/Dartotsu/commit/0ccc564f): fix: report an unreachable plugin index and silence Windows noise warnings\n\n### 🔧 Refactors\n* [7edde87a](https://github.com/aayush2622/Dartotsu/commit/7edde87a): refactor: move download transport and title/HLS/source-test helpers to the extension bridge\n* [f626ab41](https://github.com/aayush2622/Dartotsu/commit/f626ab41): refactor: group list entries by status in one shared helper\n* [c3de800b](https://github.com/aayush2622/Dartotsu/commit/c3de800b): refactor: share one reverse image search sheet between trace.moe and SauceNAO\n\n### 🚀 Performance Improvements\n* [65fcbec9](https://github.com/aayush2622/Dartotsu/commit/65fcbec9): perf: story backgrounds use the cached pre-blurred bitmap instead of live blur\n* [09ce3c20](https://github.com/aayush2622/Dartotsu/commit/09ce3c20): perf: cheaper download cover and latest-unit lookup\n* [d84d5b9d](https://github.com/aayush2622/Dartotsu/commit/d84d5b9d): perf: read only the MediaQuery aspect each widget needs\n* [5830b23f](https://github.com/aayush2622/Dartotsu/commit/5830b23f): perf: compile regexes once instead of on every call\n* [f95d7781](https://github.com/aayush2622/Dartotsu/commit/f95d7781): perf: build long lists lazily in downloads, notifications, sheets and settings\n* [59aa319d](https://github.com/aayush2622/Dartotsu/commit/59aa319d): perf: comment thread is a sliver so the detail page and player scroll without lag\n\n### 🧹 Chores & Documentation\n* [2aadb0b5](https://github.com/aayush2622/Dartotsu/commit/2aadb0b5): chore: pub upgrade [build.all]\n* [0411d542](https://github.com/aayush2622/Dartotsu/commit/0411d542): chore: version bump\n* [b8486cb3](https://github.com/aayush2622/Dartotsu/commit/b8486cb3): chore: update dependencies\n* [994f8d22](https://github.com/aayush2622/Dartotsu/commit/994f8d22): chore: update the extension bridge\n* [b94f8c68](https://github.com/aayush2622/Dartotsu/commit/b94f8c68): chore: bump nix channels.json\n* [b4e1b4c9](https://github.com/aayush2622/Dartotsu/commit/b4e1b4c9): chore: build all [build.all]\n* [6bfd7d4e](https://github.com/aayush2622/Dartotsu/commit/6bfd7d4e): chore: update the extension bridge\n* [d2338b4b](https://github.com/aayush2622/Dartotsu/commit/d2338b4b): chore: bump nix channels.json\n* [24eabb8e](https://github.com/aayush2622/Dartotsu/commit/24eabb8e): chore: build all [build.all]\n* [d0ca6edf](https://github.com/aayush2622/Dartotsu/commit/d0ca6edf): chore: bump nix channels.json\n* [a49bb11d](https://github.com/aayush2622/Dartotsu/commit/a49bb11d): chore: build all [build.all]\n* [5a876663](https://github.com/aayush2622/Dartotsu/commit/5a876663): chore: build all [build.all]\n* [33d2763a](https://github.com/aayush2622/Dartotsu/commit/33d2763a): chore: bump nix channels.json\n* [8ad97712](https://github.com/aayush2622/Dartotsu/commit/8ad97712): chore: build all [build.all]\n* [8588adae](https://github.com/aayush2622/Dartotsu/commit/8588adae): chore: update dependencies\n* [ea0040a4](https://github.com/aayush2622/Dartotsu/commit/ea0040a4): chore: build all [build.all]\n* [6e94bd72](https://github.com/aayush2622/Dartotsu/commit/6e94bd72): chore: remove the chosen-folder storage and keep all-files access\n* [21273ec7](https://github.com/aayush2622/Dartotsu/commit/21273ec7): chore: build all [build.all]\n* [0ece8840](https://github.com/aayush2622/Dartotsu/commit/0ece8840): chore: bridge with latest plugins [build.all]\n* [2427b891](https://github.com/aayush2622/Dartotsu/commit/2427b891): chore: bridge with streamed video links\n* [b291549a](https://github.com/aayush2622/Dartotsu/commit/b291549a): chore: bridge with the iOS embedded jar fix\n* [c99c8730](https://github.com/aayush2622/Dartotsu/commit/c99c8730): chore: bridge with faster CloudStream link loading\n* [3400a06a](https://github.com/aayush2622/Dartotsu/commit/3400a06a): chore: bump nix channels.json\n* [bb20cdde](https://github.com/aayush2622/Dartotsu/commit/bb20cdde): chore: build all [build.all]\n* [4fef4381](https://github.com/aayush2622/Dartotsu/commit/4fef4381): chore: bridge with DASH downloads\n* [d6b294f0](https://github.com/aayush2622/Dartotsu/commit/d6b294f0): chore: bump nix channels.json\n* [54b2ebf8](https://github.com/aayush2622/Dartotsu/commit/54b2ebf8): ci: build every Android ABI on alpha again\n* [0c86bb6f](https://github.com/aayush2622/Dartotsu/commit/0c86bb6f): ci: keep a warm Android compile across lockfile changes\n* [7580a534](https://github.com/aayush2622/Dartotsu/commit/7580a534): chore: build all [build.all]\n* [19869c72](https://github.com/aayush2622/Dartotsu/commit/19869c72): chore: bridge with iOS classpath fix, Windows trust store, wider converter stamp and month-name dates\n* [da3580b1](https://github.com/aayush2622/Dartotsu/commit/da3580b1): chore: bump nix channels.json\n* [c839c406](https://github.com/aayush2622/Dartotsu/commit/c839c406): chore: build all [build.all]\n* [f83a2c9b](https://github.com/aayush2622/Dartotsu/commit/f83a2c9b): chore: bridge with CloudStream conversion fixes and dynamic iOS runtime jar\n* [c51eac40](https://github.com/aayush2622/Dartotsu/commit/c51eac40): chore: bump nix channels.json\n* [6e4089fe](https://github.com/aayush2622/Dartotsu/commit/6e4089fe): ci: keep Android Flutter cache and prune stale Actions caches\n* [6c6504b8](https://github.com/aayush2622/Dartotsu/commit/6c6504b8): chore: bump nix channels.json\n* [402f7ba3](https://github.com/aayush2622/Dartotsu/commit/402f7ba3): chore: build with multi-audio downloads and the window_manager 0.6 port [build.all]\n* [ab9e2d92](https://github.com/aayush2622/Dartotsu/commit/ab9e2d92): chore: update the extension bridge for multi-audio HLS downloads\n* [ecfbe93f](https://github.com/aayush2622/Dartotsu/commit/ecfbe93f): chore: add strings for the not-in-list filter and the onboarding language step\n* [92df5660](https://github.com/aayush2622/Dartotsu/commit/92df5660): chore: bump nix channels.json\n* [9e2d80dc](https://github.com/aayush2622/Dartotsu/commit/9e2d80dc): chore: build with the CloudStream plugin change stream [build.all]\n* [394da76d](https://github.com/aayush2622/Dartotsu/commit/394da76d): chore: use the bridge that streams CloudStream plugin changes\n* [ef0ff3aa](https://github.com/aayush2622/Dartotsu/commit/ef0ff3aa): chore: bump nix channels.json\n* [62354fc3](https://github.com/aayush2622/Dartotsu/commit/62354fc3): chore: use the bridge that fetches Aniyomi pages through the extension's own client [build.all]\n* [18dad2b6](https://github.com/aayush2622/Dartotsu/commit/18dad2b6): chore: bump nix channels.json\n* [ee70177f](https://github.com/aayush2622/Dartotsu/commit/ee70177f): chore: use the bridge with Flutter-backed source WebViews [build.all]\n* [c371aa22](https://github.com/aayush2622/Dartotsu/commit/c371aa22): chore: use the pushed bridge with the toolkit and downloads libraries [build.all]\n* [ee77f493](https://github.com/aayush2622/Dartotsu/commit/ee77f493): chore: document the Discord overhaul, bridge downloads and card badge editor in CLAUDE.md\n* [45e7ff83](https://github.com/aayush2622/Dartotsu/commit/45e7ff83): chore: Flutter 3.47 and Dart 3.13 minimums\n* [28e05cd3](https://github.com/aayush2622/Dartotsu/commit/28e05cd3): chore: bump nix channels.json\n* [e4fdfc53](https://github.com/aayush2622/Dartotsu/commit/e4fdfc53): chore: remove the test folder and build all [build.all]\n* [8ea9223f](https://github.com/aayush2622/Dartotsu/commit/8ea9223f): docs: update CLAUDE.md for the card counter, subtitle matching and media-kit\n* [a3e7f577](https://github.com/aayush2622/Dartotsu/commit/a3e7f577): chore: use Predidit's media-kit\n* [273600f1](https://github.com/aayush2622/Dartotsu/commit/273600f1): ci: use gh download URLs for release Discord links\n* [e21781cb](https://github.com/aayush2622/Dartotsu/commit/e21781cb): chore: bump nix channels.json",
-          "downloadURL": "https://github.com/aayush2622/Dartotsu/releases/download/v1.2.1/Dartotsu-iOS-v1.2.1.ipa",
-          "size": 86846398,
-          "minOSVersion": "15.0"
         }
       ]
     },
@@ -875,29 +780,6 @@
       ]
     },
     {
-      "name": "LightNovelShelf",
-      "bundleIdentifier": "app.lightnovel.shelf",
-      "developerName": "LightNovelShelf",
-      "subtitle": "轻书架官方 Flutter 客户端",
-      "localizedDescription": "轻书架官方 Flutter 客户端，面向 iOS、iPadOS 与 Android，支持书架管理、在线阅读、翻页动画、双页阅读与自动更新。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/LightNovelShelf/icon.png",
-      "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/LightNovelShelf/images/home.jpeg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/LightNovelShelf/images/community.jpeg"
-      ],
-      "tintColor": "#4E4592",
-      "versions": [
-        {
-          "version": "1.13.2",
-          "date": "2026-10-18T10:47:40Z",
-          "localizedDescription": "- 支持自动更新。\n- 平板端新增侧边导航和左右分栏布局。\n- 阅读器默认开启双页显示。\n- 设置页新增重置所有设置。\n- 我的道具新增使用入口，支持使用改名卡。\n- 搜索页移除页码提示。",
-          "downloadURL": "https://github.com/LightNovelShelf/Flutter/releases/download/v1.13.2/app-ios-unsigned.ipa",
-          "size": 11957867,
-          "minOSVersion": "15.0"
-        }
-      ]
-    },
-    {
       "name": "LinuxRunner",
       "bundleIdentifier": "dev.linuxrunner.app",
       "developerName": "Leminos",
@@ -1246,50 +1128,6 @@
       ]
     },
     {
-      "name": "Open Screen Sharing",
-      "bundleIdentifier": "io.nekohasekai.screensharing",
-      "developerName": "nekohasekai",
-      "subtitle": "Remote desktop client optimized for Mac screen sharing",
-      "localizedDescription": "Open Screen Sharing is a free and open-source remote desktop client optimized for Mac screen sharing and public networks, while also offering first-class support for standard VNC and RDP.",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/OpenScreenSharing/icon.png",
-      "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/OpenScreenSharing/images/session.png"
-      ],
-      "tintColor": "#1060F0",
-      "versions": [
-        {
-          "version": "1.0.8",
-          "date": "2026-11-20T13:51:14Z",
-          "localizedDescription": "* Add a tab bar for multiple sessions on iPad\n* Extend full-screen sessions around the MacBook notch\n* Add native touch input for touch displays on macOS\n* Automatically take over busy High Performance sessions from other Open Screen Sharing clients\n* Add RSA-AES and VeNCrypt authentication for VNC servers (RealVNC, TigerVNC, wayvnc)\n* Add option to reverse scroll direction for standard VNC and RDP\n* Fixes and improvements",
-          "downloadURL": "https://github.com/nekohasekai/open-screen-sharing/releases/download/v1.0.8/OpenScreenSharing.ipa",
-          "size": 11167454,
-          "minOSVersion": "15.0"
-        }
-      ]
-    },
-    {
-      "name": "OpenParsec",
-      "bundleIdentifier": "com.aigch.OpenParsec",
-      "developerName": "hugeBlack",
-      "subtitle": "Open Parsec client for iOS/iPadOS",
-      "localizedDescription": "An open-source Parsec client for iOS/iPadOS with mouse, keyboard, and touch-screen support.",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/OpenParsec/icon.png",
-      "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/OpenParsec/images/login.png"
-      ],
-      "tintColor": "#BB01F0",
-      "versions": [
-        {
-          "version": "2.0.0",
-          "date": "2026-11-13T07:02:53Z",
-          "localizedDescription": "## Welcome to OpenParsec v2.0.0!\r\n\r\nThis is the release promised back in 1.4.0, with everything that's been on the nightly since october.\r\n\r\nWe now have a Metal renderer, streams that hold and reconnect by themselves, new connecting screens,reworked settings, and other control-related improvements.\r\n\r\n---\r\n\r\nBefore you update:\r\n- auto reconnect is now switched on by default, see settings > developer for additional settings\r\n- everyone is now on the new Metal renderer. OpenGL is remains optional as a fallback\\\r\n- this is the last release for ios 14. it runs with some rough edges but remains functional. Future releases will be pinned, and we plan to require ios 15 starting from the next release. A seperate branch for iOS 14 will be created for backporting fixes as maintainer time allows\r\n\r\nstreaming\r\n- metal renderer, now the default (#118)\r\n- 120hz on ProMotion iphones (#118)\r\n- the stream stays connected in the background for as long as ios allows, and reconnects when you're back (#138)\r\n- the last frame stays up when the stream drops (#138)\r\n- auto reconnect waits for the network to come back, and reconnects right away on a wifi/cellular switch (#138)\r\n- resolution, bitrate and constant frame rate survive a reconnect (#119)\r\n\r\ninput\r\n- smoother trackpad scrolling, thanks @alantangok (#97)\r\n- reverse scrolling works for trackpad and mouse, thanks @MoustacheOff (#116)\r\n- menu edge swipe setting, thanks @alantangok (#100)\r\n- left edge swipe brings back a hidden menu button (#120)\r\n- show menu button off no longer hides the keyboard button (#120)\r\n- mouse side buttons (#120)\r\n- drag handle in direct mode when the keyboard covers the picture, three finger tap hides the keyboard (#120)\r\n- the next controller takes over when the active one disconnects (#120)\r\n\r\napp\r\n- settings rework, and settings open from the stream menu (#119, #129)\r\n- bitrate, constant frame rate and pinch to zoom are settings that carry over between streams (#119)\r\n- touch mode in the stream menu (#129)\r\n- connecting and reconnect screens match and show a live connection log (#130)\r\n- says right away when there's no network, retries once if the host doesn't answer (#117)\r\n- last host card stays after a disconnect, reconnect from the app icon (#117)\r\n- host list refresh no longer blocks the screen, long press a host to copy its name (#113)\r\n- new readme, contributing guide and issue templates (#139)\r\n\r\nThanks to everyone for making bug reports on nightly builds, and thank you for your support!\r\n\r\n---\r\n\r\n# Generated by GitHub\r\n\r\n## What's Changed\r\n* host list UX by @SandiyosDev in https://github.com/hugeBlack/OpenParsec/pull/113\r\n* Preserve fractional GCMouse scroll deltas by @alantangok in https://github.com/hugeBlack/OpenParsec/pull/97\r\n* Add opt-in iPad menu edge swipe by @alantangok in https://github.com/hugeBlack/OpenParsec/pull/100\r\n* last host reconnect optimization  by @SandiyosDev in https://github.com/hugeBlack/OpenParsec/pull/117\r\n* METAL RENDERER!!! by @SandiyosDev in https://github.com/hugeBlack/OpenParsec/pull/118\r\n* settings rework by @SandiyosDev in https://github.com/hugeBlack/OpenParsec/pull/119\r\n* input and keyboard fixes by @SandiyosDev in https://github.com/hugeBlack/OpenParsec/pull/120\r\n* token on altstore release fetch by @SandiyosDev in https://github.com/hugeBlack/OpenParsec/pull/127\r\n* Stream guards by @SandiyosDev in https://github.com/hugeBlack/OpenParsec/pull/128\r\n* Stream menu by @SandiyosDev in https://github.com/hugeBlack/OpenParsec/pull/129\r\n* Connect screens by @SandiyosDev in https://github.com/hugeBlack/OpenParsec/pull/130\r\n* fix: honor Reverse Scroll Direction for trackpad/mouse scrolling by @MoustacheOff in https://github.com/hugeBlack/OpenParsec/pull/116\r\n* Stream resume by @SandiyosDev in https://github.com/hugeBlack/OpenParsec/pull/138\r\n* prep 2.0 release by @SandiyosDev in https://github.com/hugeBlack/OpenParsec/pull/139\r\n\r\n## New Contributors\r\n* @alantangok made their first contribution in https://github.com/hugeBlack/OpenParsec/pull/97\r\n* @MoustacheOff made their first contribution in https://github.com/hugeBlack/OpenParsec/pull/116\r\n\r\n**Full Changelog**: https://github.com/hugeBlack/OpenParsec/compare/1.4.0...2.0.0",
-          "downloadURL": "https://github.com/NearFrame/OpenParsec/releases/download/2.0.0/OpenParsec.ipa",
-          "size": 4445097,
-          "minOSVersion": "14.0"
-        }
-      ]
-    },
-    {
       "name": "Orchard",
       "bundleIdentifier": "com.makr.orchard",
       "developerName": "MakrSas",
@@ -1581,30 +1419,6 @@
       ]
     },
     {
-      "name": "Silverphase",
-      "bundleIdentifier": "com.silverphase.editor",
-      "developerName": "akinal5765-byte",
-      "subtitle": "面向 iPhone 与 iPad 的原生胶片与印相模拟器",
-      "localizedDescription": "一张照片要经历相机输入、胶片、显影、放印与扫描。选好胶片与相纸，再用曝光、显影反差、滤镜与画幅尺寸塑造影像，颗粒、光晕与片边都在同一条成像管线中生成。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Silverphase/icon.png",
-      "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Silverphase/images/canvas.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Silverphase/images/panel.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Silverphase/images/materials.png"
-      ],
-      "tintColor": "#FF9F0A",
-      "versions": [
-        {
-          "version": "1.1.1",
-          "date": "2026-11-02T16:14:09Z",
-          "localizedDescription": "> **当前两端下载：** [macOS 1.0.1](https://github.com/akinal5765-byte/Silverphase/releases/tag/v1.0.1) · [iOS 1.1.1](https://github.com/akinal5765-byte/Silverphase/releases/tag/v1.1.1)\n\n新增 **CineStill 800T**，已接入 iOS 与 macOS 的共享胶片目录。\n\n- 采用上游的无防光晕背层回反射模型，提供红色光晕和 **0–8 EV 高光余量**控制。\n- 新增按通用提示词生成的包装风格封面；两端卡片短名称统一为 **800T**，列表保留完整名称 **CineStill 800T**。\n- 复用 Vision3 500T 的原始乳剂数据与印相校准，保留 Hanze Qiu、Andrea Volpato 的来源记录及 GPL / CC BY-SA 声明。\n\n两端独立编号：**macOS 1.0.1（2）**、**iOS 1.1.1（3）**。\n\n[PR #2](https://github.com/akinal5765-byte/Silverphase/pull/2) 已合并。安装包来自提交 `0e0d354c6d4813ec7cdbf6a004a3c3c3fde9525a`，其源码树与合并后的 `main` 一致。包内附构建来源与开源声明，公开包不包含个人照片、私有材料或签名凭据。\n\n## 下载与安装\n\n下载 **`Silverphase-1.1.1-iOS-unsigned.ipa`**，适用于 **arm64、iOS / iPadOS 18 及以上**。\n\n这是**未签名 IPA**，需要自行完成设备签名和描述文件配置；请保留 `Silverphase-iOS-RequiredEntitlements.plist` 中的 Increased Memory Limit 能力。包内不提供证书、私钥或设备描述文件。安装方法见附件 `INSTALL.md`；校验值见 `SHA256SUMS.txt`，构建与来源信息见 `ios-build.json`。\n\n## 验证范围\n\n800T 的模拟器专项检查通过，公共 Release 构建与打包通过。完整移动端冒烟检查在后续读取原图细节时因内存不足中止，因此仍属部分覆盖。\n\n签名开发版本已单独覆盖安装到 Duo，保留照片库和编辑记录；安装后未启动应用或操作验证。此版本不新增真机触控、相册权限、内存能力或全分辨率导出的验收结论。\n\n[详细验证记录](https://github.com/akinal5765-byte/Silverphase/blob/0e0d354c6d4813ec7cdbf6a004a3c3c3fde9525a/performance/VALIDATION-CINESTILL-2026-11-02.md)。",
-          "downloadURL": "https://github.com/akinal5765-byte/Silverphase/releases/download/v1.1.1/Silverphase-1.1.1-iOS-unsigned.ipa",
-          "size": 92284015,
-          "minOSVersion": "18.0"
-        }
-      ]
-    },
-    {
       "name": "Simple Live",
       "bundleIdentifier": "com.xycz.simple-live",
       "developerName": "June6699",
@@ -1723,29 +1537,6 @@
       ]
     },
     {
-      "name": "Tsumiru",
-      "bundleIdentifier": "com.suwayomi.tachideskSorayomi",
-      "developerName": "Suwayomi",
-      "subtitle": "Native manga & manhwa reader for Suwayomi-Server",
-      "localizedDescription": "Tsumiru is a native client for reading manga & manhwa from a Suwayomi-Server instance, built for long webtoon binges. Offline downloads with an on-device catalog, a rebuilt continuous-scroll webtoon reader, incognito mode, and 13 built-in themes.",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Suwayomi-Tsumiru/icon.png",
-      "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Suwayomi-Tsumiru/images/list.jpg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Suwayomi-Tsumiru/images/update.jpg"
-      ],
-      "tintColor": "#7c7bff",
-      "versions": [
-        {
-          "version": "1.6.5",
-          "date": "2026-11-07T23:44:29Z",
-          "localizedDescription": "A manga and webtoon reader for your [Suwayomi](https://suwayomi.org/) server.\n\n### ✨ New Features\n\n- Added **Per-category settings for sort and filters** to the Library, including changes made offline (@aaronbamblett)\n- Added notifications when a new Tsumiru or server version is out, with **Remind later** and **Ignore** (@aaronbamblett)\n- Added **Offset double spreads** to the paged reader for spreads that start on an odd page (@PainTownblue)\n\n### ⚙️ Changes\n\n- Made long strip taps and keys scroll by **Scroll distance** instead of a whole page (@aaronbamblett)\n- Changed **Keep screen on** to off by default (@aaronbamblett)\n- Added Up and Down page turns in horizontal paged mode and N and P to change chapter (@aaronbamblett)\n\n### 🚀 Improvements\n\n- Hid empty category tabs while searching or filtering the library, with **Show empty categories during search/filtering** to keep them (@aaronbamblett)\n- Moved **Create registration code** to **Manage users** and added an **Edit** button to user rows (@aaronbamblett)\n\n### 🧩 Fixes\n\n- Fixed the offline library not opening when Tsumiru starts without a connection (@aaronbamblett)\n- Fixed **Something went wrong** showing on every page while reading offline (@aaronbamblett)\n- Fixed library covers going blank in Safari after scrolling them off screen and back (@aaronbamblett)\n- Fixed the paged reader restoring an old zoom when you return to a page (@aaronbamblett)\n- Fixed saved searches from older WebUI versions not loading (@aaronbamblett)\n\n*Thanks to our Weblate translators: Damien O'Neil for French, Kisnov for Catalan, Andrei Stepanov for Russian and PainTownblue for Chinese.*\n\n## Install\n\nYou'll need a running Suwayomi server. See [Getting started](https://tsumiru.app/docs/guides/getting-started).\n\n### Mobile\n\n**Android:** download the universal APK below and open it to install. Smaller APKs for specific chip types are also attached.\n\n**iOS:** the `…-ios.ipa` below is unsigned and has to be sideloaded. Add `https://tsumiru.app/apps.json` as a source in [SideStore](https://sidestore.io/) or [AltStore](https://altstore.io/) to install it and get later releases as updates.\n\n<details>\n<summary>Which sideloading tool should I use?</summary>\n\n- **[SideStore](https://sidestore.io/)** signs and refreshes the app on the device itself, with no computer needed after setup. Best for most people.\n- **[AltStore](https://altstore.io/)** expires every 7 days and only refreshes while a computer running AltServer is switched on and on the same Wi-Fi as your phone.\n- **[TrollStore](https://ios.cfw.guide/installing-trollstore/)** installs permanently with no expiry, but only works on older iPhones and iOS versions with the required vulnerability.\n\nWith SideStore or AltStore the app is re-signed periodically, which those tools automate. There is no App Store build.\n</details>\n\n### Desktop\n\n**Windows:** download `…-windows-x64.zip`, extract it anywhere, and run `tsumiru.exe`.\n\n**macOS:** download `…-macos-universal.zip`, extract it, and move the app to Applications. If macOS blocks the first launch, approve it under System Settings → Privacy & Security.\n\n**Linux:** the Flatpak is recommended and auto-updates.\n\n```sh\nflatpak remote-add --if-not-exists tsumiru https://flatpak.tsumiru.app/index.flatpakrepo\nflatpak install tsumiru app.tsumiru.Tsumiru\n```\n\nExisting Flatpak installs keep receiving updates under `io.github.aaronbamblett.tsumiru`; no data, settings or logins move. AppImage/deb also keep that ID.\n\nFor a portable option, download `…-linux-x86_64.AppImage`, mark it executable with `chmod +x`, and run it.\n\n### Web\n\nDownload `…-web.zip` and serve its contents with any static web server.\n\n[Full documentation](https://tsumiru.app/)",
-          "downloadURL": "https://github.com/Suwayomi/Suwayomi-Tsumiru/releases/download/v1.6.5/tsumiru-v1.6.5-ios.ipa",
-          "size": 17346615,
-          "minOSVersion": "14.0"
-        }
-      ]
-    },
-    {
       "name": "UTM",
       "bundleIdentifier": "com.utmapp.UTM",
       "developerName": "osy",
@@ -1765,31 +1556,6 @@
           "localizedDescription": "## Highlights\n* (macOS) **DirectX graphics support for Windows**: Modern accelerated graphics for Windows 11 is now available on UTM for the first time. The driver is still experimental and games compatibility is currently limited.\n* **Vulkan 1.3 graphics support for Linux**: Vulkan 1.3 is now supported on Linux guests with VirtIO Venus drivers in Mesa. Additionally, OpenGL 4.1 is supported with the new Apple Core OpenGL backend (macOS only).\n* **Snapshots**: Save your VM at any point and go back to it later from the new Snapshots tab. Works with QEMU VMs on macOS and iOS 26, and with Apple Virtualization VMs on macOS 27.\n* (macOS) **Apple Virtualization on macOS 27**: Pass USB devices through to your VM, turn on Secure Boot for Linux, run a VM without saving changes, and let VMs talk to each other with new networking modes.\n* (macOS) **Smoother displays**: VMs now follow your display's refresh rate, so motion is fluid at up to 120 Hz on ProMotion displays.\n* **More reliable USB**: Fast external SSDs can now be shared with a VM, and disconnecting a drive no longer freezes UTM. On macOS, drives are safely unmounted before they are handed to a VM.\n* (iOS) **Better touch controls**: Gestures respond immediately, with new middle-click and right-drag actions and a new drag-to-scroll touch mode.\n* (iOS) **iPhone Duo**: Fold your iPhone Duo like a laptop, and the bottom half becomes a keyboard or touchpad for your VM.\n\n## Notes\n* Suspended VMs may not resume correctly after updating. We recommend shutting down all VMs before you update UTM.\n* The minimum supported versions are now macOS 12 and iOS 15.\n* (macOS) Check out [UTM Games Database](https://db.getutm.app/) to see and report game compatibility for the experimental 3D driver. Re-install the Windows guest tools to get the latest driver.\n* We now have a [development blog](https://blog.getutm.app)! Follow us for in-depth technical deep dives such as how we brought DirectX to QEMU.\n* (macOS) To use the new graphics driver for Windows 11, we recommend a fresh install because the driver is still experimental and its use could lead to instability in the system. During the install of the guest tools, you will be prompted to select the experimental graphics driver. If you wish to install the new driver on a system that already is running the older display only driver, you need to run the uninstall script provided on the guest tools install ISO first.\n* (macOS) Apple CoreGL backend does not support Vulkan or DirectX.\n* Linux desktop rendering in Vulkan does not work due to lack of support for indirect draws for geometry shaders. Please configure your guest to use the older VirGL Gallium driver.\n* SCSI drives on ARM64 virtual machines now use a VirtIO SCSI controller. A VM with a SCSI drive that was suspended, or has a snapshot with saved state, from an earlier version cannot resume it: delete the saved state and start the VM again.\n\n## Changes (v5.0.9)\n* (macOS 14) Display: Reverted the fix for VM windows being limited to 60 fps on ProMotion displays, because it could crash a VM at startup (#8204) and blurred Retina mode (#8191). VM windows still run at 120 Hz on a ProMotion display, unless a slower external display is the main display (added 2026-11-18)\n* Fixed Windows games hanging at startup while compiling shaders, in-game videos stalling after the first frame, and a failed 3D command resetting the guest's display (#7984)\n* Fixed X11 apps under Xwayland not displaying with Vulkan on Linux\n* Updated the virglrenderer, MoltenVK and DXMT graphics backends\n* Security: Fixed memory corruption issues that could allow a malicious guest to gain sandboxed code execution in the isolated rendering process (thanks Xusheng Li at Vector 35 Inc)\n* Home: VM notes now render Markdown (#3547) (thanks @pingu-the-penguin)\n* Home: Fixed the confirmation for Clone, Stop or Move not appearing the second time it was requested for the same VM (thanks @ianplusplus)\n* Home: Fixed the screenshot in the VM details being covered by a flat color on iOS 26, macOS 26 and visionOS 26\n* Home: The size shown in the VM details now updates after the settings are closed (#7923)\n* Home: A VM on an external drive that is listed as unavailable now stays available after its .utm is opened again (#7762)\n* Home: Fixed one unreadable saved entry making every VM lose its saved location, window state and external drives\n* Config: SCSI drives on ARM64 virtual machines now use a VirtIO SCSI controller, so guests without an LSI driver such as Rocky Linux and RHEL can see them (#7712)\n* Config: Fixed PowerPC VMs created with the default settings failing to start because of too many CPU cores\n* Config: Fixed the default devices of the Heathrow PowerMac (g3beige) machine keeping the VM from starting (#7803)\n* Config: Fixed the default configuration of the Sam460ex machine failing to start (#7603)\n* Config: Fixed new PowerPC VMs such as pseries defaulting to a network card that the machine rejects (#7592)\n* Config: Fixed saving a VM failing after adding a TPM on RISC-V and LoongArch\n* Config: Fixed a crash opening the terminal window of a VM whose configuration has no terminal settings\n* Config: Fixed the host port of port forwards being replaced by the guest port when migrating a UTM 3 configuration\n* QEMU: Guests with a VirtIO GPU now use the host display's refresh rate instead of always 75 Hz (#7820) (thanks @dragoshont)\n* QEMU: Fixed saving a VM state that takes longer than 10 seconds being reported as \"Timed out waiting for RPC\" (#8052)\n* QEMU: Fixed networking and the guest agent stalling once QEMU holds about a thousand open files, such as with a busy shared directory or 3D acceleration (#7624)\n* QEMU: Fixed the display modes missing from the Monitors control panel of Mac OS guests on the mac99 machine (thanks @giovariot)\n* QEMU: Fixed sound in Mac OS 9 and a hang at startup in its sound driver (#8033)\n* QEMU: Fixed Mac OS 9 restarting to a black screen (#7999)\n* QEMU: Fixed sound crackling and dropping out while the host is busy\n* QEMU: Fixed Windows showing \"Display output is not active.\" for several seconds on every boot with GPU acceleration\n* QEMU: Fixed wrong colors in Windows programs that run in exclusive fullscreen with a 10-bit display format\n* QEMU: Fixed a newly created VM not writing its debug log until UTM was restarted\n* SPICE: Fixed sound staying silent until UTM was restarted after the guest stopped playing audio (#8148)\n* CocoaSpice: Fixed a VM restored from a saved state showing a black screen until the guest draws again (#8050)\n* CocoaSpice: Fixed a crash when a VM's screenshot was redrawn after the guest changed resolution or the VM stopped (#7745)\n* Guest Agent: Fixed a guest being able to crash UTM through the guest agent port (#7684)\n* USB: Fixed sharing 10 Gbps (USB 3.2 Gen 2) devices such as external SSDs and NVMe enclosures (#7530) (thanks @giovariot)\n* USB: Fixed UTM freezing when a USB 3 drive is disconnected from a running VM (#5851)\n* USB: Fixed USB audio devices playing slowly and stuttering (#8028) (thanks @gitwillsky)\n* Downloader: Fixed the guest tools never updating after the first download when UTM runs in a language other than English (#7978)\n* Downloader: VMs downloaded from a link now show the same warning about custom QEMU arguments as imported VMs (#7733)\n* Downloader: Fixed some ZIP files importing as an empty VM\n* Shortcuts: Fixed \"Pause Virtual Machine\" with Save State not saving the state\n* Localization: Updated Chinese (Hong Kong, Simplified) (thanks @changanmoon)\n* (iOS 15) Fixed a crash on launch\n* (iOS) Fixed the state saved by \"Auto save on background\" being lost when iOS ends UTM (#8051)\n* (iOS) Home: Fixed a crash when selecting a VM whose configuration failed to load\n* (iOS) Home: Fixed the settings closing right away when editing a VM while the list is in edit mode (#7939)\n* (iOS SE) QEMU: Fixed wrong results from vector comparisons in guests (#7722)\n* (macOS) Fixed a VM never starting, and blocking every later start, when it is started while UTM is hidden (#4091, #7988)\n* (macOS) Fixed D3DMetal being selected on Apple Silicon Macs running macOS 27 without Rosetta (#8002) (thanks @pingu-the-penguin)\n* (macOS) Fixed Windows 3D acceleration on Intel Macs by no longer selecting D3DMetal there (#8040) (thanks @nightness)\n* (macOS) Updated the D3DMetal graphics backend with fixes for corrupted geometry and GPU hangs in games\n* (macOS 12) Fixed the Virtual Machine menu having no title in the menu bar (#8117)\n* (macOS 14) ~~Display: Fixed VM windows being limited to 60 fps on ProMotion displays when connected to an external display (thanks @dragoshont)~~\n* (macOS) Display: Holding a key now repeats it in guests that use a PS/2 keyboard, such as DOS and Windows 98 (#7766)\n* (macOS) Display: Fixed clicks from automation, accessibility tools and touch displays landing at the previous pointer position\n* (macOS) Toolbar: The USB, drives, shared folder, windows and keyboard shortcut menus now open under their button instead of at the pointer\n* (macOS 12) Wizard: Fixed the summary page renaming the library window to \"Summary\"\n* (macOS) Wizard: Going back to the hardware page no longer discards the machine, memory, cores and storage that were chosen\n* (macOS 26) Settings: Fixed the Input pane being cut off at both edges of the settings window (#7990, #8022)\n* (macOS) Settings: Fixed the Display and Input panes of a VM being cut off in languages with long labels (#7782)\n* (macOS) Settings: Fixed number fields with steppers not lining up with the rest of the form (#7702)\n* (macOS) Settings: Fixed a click not selecting a port forward (#7600)\n* (macOS) Settings: Fixed a crash in the keyboard shortcut editor after deleting a shortcut (thanks @namoen0301)\n* (macOS) QEMU: Better performance and steadier sound for x86_64 guests on Intel Macs, with new \"Interrupt remapping\" and \"Lock guest memory\" options under QEMU → Tweaks that are on by default (#8046) (thanks @nightness)\n* (macOS) QEMU: Fixed GPU-accelerated VMs crashing at startup on Intel Macs (#8036)\n* (macOS) QEMU: Fixed multi-core VMs hanging after the guest reboots (#8009)\n* (macOS) QEMU: Fixed Windows VMs crashing on reboot or shutdown with the 3D graphics driver (#7981)\n* (macOS) SPICE: Fixed a crash while sharing the clipboard with the guest (#8106)\n* (macOS) USB: A drive's volumes are now unmounted before it is connected to a VM, which avoids the \"Disk Not Ejected Properly\" warning (#5650) (thanks @giovariot)\n* (macOS) USB: A device set to \"Auto connect on start\" is now connected again when it is plugged back in while the VM runs (thanks @giovariot)\n* (macOS) AVF: Fixed Linux guests having no sound output (#8105)\n* (macOS) AVF: Clones now get new MAC addresses when \"Regenerate MAC addresses on clone\" is on (#7895)\n* (macOS) AVF: Say that the disk is full when a macOS install fails because the Mac ran out of space (#7958)\n* (macOS) AVF: Side mouse buttons are no longer sent to Linux guests as a middle click (#7739)\n* (macOS) AVF: Fixed a crash when taking a screenshot of a VM window with no size (#7650)\n* (macOS) Scripting: New `capture screen` and `install guest tools` commands, a `file` property for the location of a VM, and `start … environment` to pass environment variables to QEMU, also as `utmctl start --env` (#5341, #6933)\n* (macOS) Scripting: More QEMU options and the sound devices can be set in the configuration, and `guest size` now grows an existing drive\n* (macOS) Scripting: The input commands and `capture screen` now work with Apple VMs, and a macOS VM can be created and installed without supplying an IPSW\n* (macOS) Scripting: `get configuration` now returns the `source` of each drive (#7743)\n* (macOS) Scripting: Suspending with save state now leaves the VM running when its state can't be saved, instead of leaving it paused (#7934)\n* (macOS) Scripting: Fixed scripting and utmctl finding no VMs when UTM is launched hidden without its main window (#7949)\n* (macOS) Scripting: Fixed a removable drive set from a script on an Apple VM failing on the first start (#8129)\n* (macOS) Scripting: Fixed `protocol:TCP` being rejected in a port forward\n* (macOS) Scripting: A failed `update configuration` or `duplicate` no longer leaves its unsaved changes behind\n* (macOS) utmctl: Commands now exit with a failure status when they fail (#7933)\n* (macOS) utmctl: `exec` now waits for the guest process to finish and returns its exit status (#7932)\n* (macOS) utmctl: Removed the `attach` command and `start --attach`, which never worked (#7987)\n\n## Changes (v5.0.8)\n* Fixed several changes listed for v5.0.7 being left out of that build by mistake.\n* (macOS) Fixed Windows 3D acceleration on Apple Silicon Macs without Rosetta by falling back to DXMT\n* (macOS) QEMU: Fixed Windows installs from the USB CD drive stalling repeatedly, which made them much slower in v5.0.7 (#7970)\n\n## Changes (v5.0.7)\n* Updated the virglrenderer, MoltenVK and DXMT graphics backends with fixes for Windows 3D acceleration\n* ~~QEMU: Windows guests now use the host display's refresh rate instead of always 60 Hz, which also fixes 3D acceleration failing on displays faster than 125 Hz (#7820)~~ This was dropped and will be included in the next update.\n* QEMU: Fixed VirtIO GPU stalls that hung Windows at shutdown, stalled 3D benchmarks on Linux, and could leave the Windows 3D driver without a display\n* Snapshots: Fixed saving and restoring the state of VMs with compressed disks (#7916)\n* Localization: Updated Chinese (Hong Kong, Simplified) (thanks @changanmoon)\n* (iOS 27.1) Support for iPhone Duo: the VM toolbar sits in the outer display's camera strip, and a new laptop mode turns the bottom half of the folded screen into a keyboard or touchpad\n* (macOS) Fixed headless VMs keeping the Mac from sleeping after they were paused or stopped\n* (macOS) Closing a VM window or quitting UTM while a VM runs now confirms with \"Close\" or \"Quit\" instead of \"OK\"\n* (macOS) Fixed shaders using instancing or integer vertex attributes drawing incorrectly with the Apple Core OpenGL backend (#7944)\n* (macOS) Updated the D3DMetal graphics backend with fixes for DirectX 12\n* (macOS) Display: The option to use the area beside the camera housing in full screen is now available on macOS 12 and later (#6183)\n* (macOS) Wizard: Fixed the Name field's focus ring being clipped on the summary page (thanks @dnicolson)\n* (macOS 15) QEMU: Better performance on Apple Silicon with the Hypervisor.framework built-in interrupt controller\n* (macOS) Scripting: Force stopping a paused VM is now allowed\n* (macOS 27) AVF: Explain when a USB device such as a webcam or phone can't be passed through, instead of showing \"VZErrorDomain error -6\" (#7914)\n* (macOS) Guest Agent: Fixed an issue where clipboard sharing fails upon suspend-resume in macOS guests (you need to re-install the latest guest tools) (#7717)\n\n## Changes (v5.0.6)\n* Raised the minimum supported versions to macOS 12 and iOS 15 (#7758)\n* Updated the DXMT and MoltenVK graphics backends\n* Updated the KosmicKrisp Vulkan driver, which now requires macOS 26 or iOS 26\n* Home: The welcome screen now offers to open an existing VM instead of linking to the gallery\n* Snapshots: New Snapshots tab to save, overwrite, restore, rename and delete snapshots of QEMU and Apple VMs. Requires iOS 26 on iOS and macOS 27 for Apple VMs (#5484)\n* Settings: Custom QEMU arguments moved to their own page, and the full command line is shown as read-only text that can be copied (#489, #7604)\n* SPICE: Fixed microphone audio quality (#7751)\n* SPICE: Fixed display and input freezing when audio playback hangs under memory pressure (thanks @evan314159)\n* CocoaSpice: Fixed typing into the built-in serial terminal (#7814)\n* Terminal: Updated SwiftTerm with a new Metal renderer, and only web links printed by the guest can be opened\n* Localization: Updated Chinese (Hong Kong, Simplified) (thanks @changanmoon)\n* (iOS) Fixed the VM toolbar and external display on iOS 26 and iOS 27\n* (iOS 26) Reclaim Space, Compress, Resize and converting imported drives to qcow2 are now available on iOS (#4774)\n* (iOS 27) Confirm before closing the window of a running VM on iPad\n* (iOS) Display: Long press and pan gestures respond immediately, touches at the screen edges reach the guest, new middle click and right/middle drag actions, and a new \"Touch mode (drag to scroll)\" (#4738)\n* (iOS) Display: Redesigned the keyboard accessory bar to match the iOS 26 keyboard\n* (iOS) Input: Game controller Options and Home buttons can now be mapped\n* (iOS) Settings: Fixed selecting the KosmicKrisp Vulkan driver\n* (macOS) VoiceOver now announces file browse fields by their name (thanks @lprazdnik)\n* (macOS) Terminal: Added a find bar (Cmd-F)\n* (macOS 27) Display: New option to use the area beside the camera housing in full screen (#6183)\n* (macOS 27) Display: Hot Corners are turned off while a VM is in full screen\n* (macOS) Settings: Improved the notes field\n* (macOS 26) Settings: The \"New…\" device menu now matches the sidebar\n* (macOS) AVF: Sound input and output can be enabled separately, so \"Output Only\" no longer switches Bluetooth headphones to headset mode (#7875)\n* (macOS 26) AVF: New \"Shared Network (VM to VM)\" and \"Host Only\" networking modes (#6975, #7480) (thanks @lovon-spec)\n* (macOS 27) AVF: USB passthrough, also available from scripting and utmctl (#3778, #7777)\n* (macOS 27) AVF: Run without saving changes (#4201, #7326)\n* (macOS 27) AVF: Secure Boot option for UEFI guests (#7874)\n* (macOS) Scripting: Snapshots are now scriptable objects, and utmctl gains `snapshot` and `discard-state` commands\n* (macOS) Scripting: Create and install macOS VMs on the Apple backend (#6092) (thanks @meisenbarth)\n* (macOS 27) Scripting: Set up the user account, automatic login and Remote Login of a new macOS VM on first boot (#7757)\n* (macOS) Scripting: Fixed shared directories set with `update registry` failing to open on Apple VMs (thanks @atkinsam)\n* (macOS) Scripting: Fixed a crash when starting a VM after removing its displays with `update configuration` (#7882)\n\n## Changes (v5.0.5)\n* ~~Reverted minimum version requirement imposed by v5.0.4: once again we support versions down to macOS 11.3 and iOS 14.0. However, DirectX support is still limited to macOS 13.0 and iOS 16.0.~~\n* Localization: Updated Chinese (Hong Kong, Simplified) (thanks @changanmoon)\n* Config: For ARM64 configs, GICv3 is now selected by default. Previously this was only the case for > 8 vCPUs. This improves performance for higher vCPU counts < 8.\n* Downloader: Path traversal and symlink checks added when unpacking downloaded ZIP files\n* Wizard: scaling is now default to \"nearest\" when a \"classic\" computer emulation is created in the wizard and \"linear\" otherwise. Previously it was \"nearest\" for all configurations which led to poor scaling filter for anything with higher resolutions.\n* (iOS) Support DirectX 11 with DXMT. Note that due to older iOS version (which supports TrollStore + Hypervisor), compatibility of DirectX titles is worse than macOS.\n* (iOS) QEMU: Fixed MMIO BAR bug which prevented large hostmem window from working\n* (iOS) Config: Improved RAM limit detection\n* (macOS) DirectX 12 is now supported with D3DMetal backend (when available). You must (re)install the latest UTM guest tools experimental 3D graphics driver.\n* (macOS) Support holding down Caps Lock key when input capture is enabled (#7840) (thanks @lprazdnik)\n* (macOS) Settings: new options to gracefully power down all running VMs on exit (#7829) (thanks @vectorseven)\n* (macOS) Settings: support Cmd<->Opt swapping (#7837) (thanks @lprazdnik)\n* (macOS) Scripting: add snapshots commands to scripting interface (#7832) (thanks @naveenrajm7)\n* (macOS) AVF: Better error message when macOS guest version is too high (#7806) (thanks @sigitkusuma)\n\n## Changes (v5.0.4)\n* (macOS) Added support for Neptune backend in virglrenderer for DirectX support\n* Localization: Updated German (thanks @Benjamin123-tech)\n* Scripting: new reload config and VLAN commands (#7710, #7711) (thanks @GregOriol)\n* SPICE: Fixed various bugs in renderer that leads to performance and tearing issues\n* SPICE: Fixed a memory leak that could result in large amount of memory use by UTM\n* Updated USB icon (#7718) (thanks @tan9)\n* Fixed crash in UTMRegistry and memory leak in AVF installer (#7701) (thanks @Casey)\n\n## Changes (v5.0.3)\n* Fixed regression in GRUB rendering time due to new graphics backend\n* Fixed Vulkan issues on latest Wayland\n* Localization: Updated Chinese (Hong Kong, Simplified) (thanks @changanmoon)\n* Home: Confirm delete when using swipe left (#3086)\n* Home: Prevent duplicate VMs from appearing (#7533) (thanks @DevSecTim)\n* AVF: Fixed CPU spike and mic loss due to two audio devices (thanks @matapo)\n* Scripting: Added ability to get IP address from AVF machines (#7643) (thanks @hellcastter)\n* Scripting: Fixed \"update registry\" for AVM backend (#7664) (thanks @EkkoG)\n* Scripting: Improve USB device matching logic (thanks @TronickDev)\n\n## Changes (v5.0.2)\n* Environment variables are now logged when debug log is enabled\n* Fixed a regression in GL acceleration where desktop might not render correctly (#7626)\n* Added geometry shaders support to MoltenVK to enable DXVK (thanks @Anducalliew433) (#7575)\n* (iOS) Fixed an issue where EAGL backend boots into a black screen (#7587)\n* (iOS) Fixed a crash on iOS 15 due to incompatible symbols (#7593)\n* (iOS) Fixed verbose logging for graphics backend\n* (iOS) Fixed a crash when GL is enabled due to missing support for glDrawElementsInstancedBaseVertex (#7596)\n* (macOS) Fixed an issue when after resizing a window if the guest outputs a different resolution size, the wrong texture resolution is used leading to misaligned cursor and warped graphics (#5781)\n* (macOS) Fixed an issue where the window resizes to 0x0 when native scaling is enabled\n\n## Changes (v5.0.1)\n* CocoaSpice: Reworked Metal renderer to be faster and have lower latency\n* Fixed an issue where a BIOS file with a comma in the filename will fail to load\n* Default FPS will now be the maximum refresh rate of the display on macOS and iPadOS (iPhone with ProMotion will still have 60Hz as the default rate but can be overridden to 120Hz through settings)\n* (macOS) Fixed issue causing `HV_UNSUPPORTED` on startup with Vulkan enabled (#7579)\n* (iOS) Fixed resolution issue on external displays (#6040)\n* (iOS) Pinch to zoom will turn off automatically updating zoom from the guest (until reset with the resize button)\n* (iOS) Fixed external display menu not updating\n* (iOS) Fixed incorrect scale on external displays and connecting an external display will now automatically scale to fit\n* (iOS) Fixed an issue where powering off the VM will show the home screen but not terminate UTM in the background\n\n## Changes (v5.0.0)\n* Add Venus support for Vulkan (#4551)\n* Add Apple Core OpenGL support for OpenGL 4.1 (#4285) (thanks @startergo)\n\n## Issues\nPlease check the full list on [Github](https://github.com/utmapp/UTM/issues) and help report any bug you find that is not listed.\n\n## Installation\n\n* [iOS](https://docs.getutm.app/installation/ios/)\n* [macOS](https://docs.getutm.app/installation/macos/)\n\n| File | Description | Installation | JIT | Hypervisor | USB |\n|------|------------|--------------|-----|-----------|-----|\n| UTM.deb | Jailbroken iOS version | Open in Cydia, dpkg, or Sileo | Yes | Yes(1) | Yes |\n| UTM.dmg | macOS version | Mounting and copying UTM.app to /Applications | Yes | Yes | Yes |\n| UTM.ipa | Non-jailbroken iOS version (sideloading) | AltStore, etc (see guide) | Yes(2) | No | No |\n| UTM-HV.ipa | Non-jailbroken iOS version (TrollStore) | TrollStore | Yes | Yes(1) | Yes |\n| UTM-SE.ipa | Non-jailbroken iOS version (sideloading) | AltStore, enterprise signing, etc | No | No | No |\n| UTM-Remote.ipa | Remote client | Any | No | No | No |\n\n1. Hypervisor on iOS requires an M1 iPad or newer.\n2. Enabling JIT may require a separate JIT enabler such as [Jitterbug][2] or Jitstreamer.\n\n### Verification (macOS)\n\nThe macOS release (`UTM.dmg`) is notarized by Apple. To verify the download, run `xcrun stapler validate UTM.dmg`. To verify the install, run `spctl -a -vv /Applications/UTM.app` and check that it is notarized and signed by `Turing Software, LLC (WDNLXAD4W8)`. This needs a network connection, so it cannot run from a sandbox that blocks outgoing connections.\n\n[1]: https://getutm.app/install/\n[2]: https://github.com/osy/Jitterbug",
           "downloadURL": "https://github.com/utmapp/UTM/releases/download/v5.0.9-2/UTM.ipa",
           "size": 150730029,
-          "minOSVersion": "14.0"
-        }
-      ]
-    },
-    {
-      "name": "VeneraNext",
-      "bundleIdentifier": "com.github.cyrilpeng.veneranext",
-      "developerName": "CyrilPeng",
-      "subtitle": "跨平台漫画阅读器",
-      "localizedDescription": "基于 Flutter 的跨平台漫画阅读器，支持本地漫画、WebDAV 漫画源与第三方网络漫画源，支持 Android、iOS、Windows、Linux、macOS 平台。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Venera-Next/icon.png",
-      "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Venera-Next/images/home.jpg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Venera-Next/images/explorer.jpg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Venera-Next/images/search.jpg"
-      ],
-      "tintColor": "#2090E0",
-      "versions": [
-        {
-          "version": "1.18.4",
-          "buildVersion": "253",
-          "date": "2026-11-23T03:27:29Z",
-          "localizedDescription": "### 正式发布与验收\n\n- 发布 `1.18.4+253`，汇总 RC1–RC3 和后续反馈修复。Android 手机／TV、Windows、macOS、iOS、Linux x64／ARM64 从同一正式标签重新构建，公开并核验后推进稳定更新渠道、AltStore 和 Winget 元数据。\n- 鸿蒙改为独立 Actions Beta 分发，继续从准确主线提交构建 ARM64／API 26 未签名 HAP，提供来源 manifest、校验值和独立设备验收模板；本次正式 Release 不附带 HAP，也不声明鸿蒙真机验收通过。历史 RC、正式版及其鸿蒙附件保持原样。\n- #178 的 Android 120 Hz 连续翻页和 #188 的收藏目录切换已获提出者明确确认；#129、#152 已交付可安装修复且超过 72 小时未收到新的失败反馈，按约定接受，不将超时视为真机确认。\n- #166 的强 Cloudflare／TLS 兼容问题及 #186 原设备更新检查网络故障因缺少充分证据暂缓，相关异常处理与诊断改进不代表原始问题已修复。白边裁剪仍会保留带扫描痕迹、压缩灰点或靠边内容的区域；#159 长期外部目录及 #163、#81、#123 等增强继续后续安排。\n- 升级前导出并另存完整应用数据备份、保留原漫画文件；沿用原包名与签名身份覆盖安装，无需清库或重新导入。鸿蒙独立 Beta 仍需用户沿用原密钥自行签装。\n\n### 候选版已交付的功能与修复\n\n- 阅读器提供「锁定阅读菜单」和靠边小锁，锁定期间阻止触摸／右键唤出菜单，保留翻页、滚动、缩放，跨章与旋转保持锁定；TV 确定键先解锁，再次操作打开菜单。纵向连续／瀑布流支持默认关闭的「裁剪左右白边」，后台逐页检测、保留内容和双页中线，原图、下载、保存及导出不变（#139）。\n- 收藏支持从零开始多选、全选／反选、长按范围选择及当前父目录的子目录排序；宽屏常用操作直接显示在顶栏，桌面 Esc 按弹窗、多选、搜索顺序退出。详情收藏面板使用完整可用高度，新建文件夹固定在顶栏，长目录名和大字号布局不再溢出（#152、#155、#157、#158）。\n- 关键词屏蔽提供字面文字包含、独立词、标签完全匹配及逐规则大小写设置，支持编辑、示例试匹配、命中原因和原文高亮；短英文缩写推荐独立词，规则保存、旧数据与备份兼容保留（#115）。\n- Cloudflare 页面检查就绪状态及返回类型，合并并发检查并等待有效 Cookie／User-Agent 持久保存后结束，关闭页面后取消迟到结果（#165）；强验证站点的 TLS／Bot 兼容范围仍受上述限制。\n- 设置保存期间保持控件布局，慢保存才显示进度；阅读器调光预览、底栏和保存状态同步监听实时设置，修复面板跳动及当前页保存后亮度回退，保留失败重试与连续操作（#168、#169、#180）。\n- 收藏按实际输入缓存搜索、规则及历史筛选，图片使用紧凑字节缓冲并合并进度刷新；连续／瀑布流异步尺寸变化保留阅读位置，前章插入等待滚动空闲，减少加载与阅读期间重复工作（#167、#170、#178）。\n- 鸿蒙独立 Beta 延续批量归档和合集 ZIP 导入、完整备份及恢复，统一所有语言的 `VeneraNext` 桌面名称；未实现的长期外部存储、平台应用锁及系统分享入口继续显示准确限制（#159、#162）。\n- 完成测试职责与公共夹具整理，删除已废弃模板及冗余用例；CI 保留实际加载／用例／跳过记录、完整分片与覆盖率、原生所有权和内存检查，以及 Android／TV、Windows、Apple 和真实文档 Provider 验证。\n\n### 安全与依赖\n\n- 更新 QUIC 和证书信任等锁定 Rust 依赖，保留完整 RustSec 扫描与原生平台兼容检查。\n- 将 Rhttp 的 `url` 锁定版本从 2.5.7 更新至 2.5.9，修复嵌套 `blob:` URL 的来源解析可能触发栈溢出的问题（RUSTSEC-2026-0592）；同步采用其要求的 `form_urlencoded` 1.2.3，保留现有 Rust／桥接版本和 iOS 兼容固定值，继续执行完整依赖审查与云端原生构建。\n\n### 本地漫画导入修复\n\n- 解压后的漫画目录复制改为直接检查暂存文件，避免每复制一张图片都重新枚举不断增长的输出目录。待复制页在实际读取时按源清单校验，已复制页仍提前核对源文件，减少首次导入对全部图片的重复读取；保留源目录结构检查、逐文件内容校验、完成证明和中断恢复。\n- 目录及漫画合集导入显示读取、检查、复制和完成校验的文件计数与进度，实际进入登记阶段后才提示保存到漫画库；加载提示保留首帧显示前收到的进度更新。\n\n### 阅读器修复\n\n- 分页布局与状态校验只读取所需设置，并复用同次布局结果，减少连翻时整份设置的重复解析；保留漫画、设备和全局设置优先级、TV 单图限制及过期请求检查。标题栏、底栏操作与亮度控件按输入复用，页码和跳页能力继续更新，实时调光、语言、主题、文字缩放及会话变更仍刷新对应控件（#178）。\n- 图片收藏状态仅缓存当前章节的页码集合，缓存命中仍经过原数据库访问队列；写入、导入、清空和连接变化后失效，查询失败可重试，减少隐藏菜单随连翻重复查询和解析收藏记录（#178）。\n- 分页预加载从页面构建移到翻页意图产生后的帧末合并调度，优先准备已接受的目标页及方向邻页；保留当前／目标页已开始的订阅，限制为两路并行解码和四个准入任务，取消后的原生清理完成前继续占用名额。预解码成功时请求清理所需的帧，空闲画面下也能释放名额并继续队列（#178）。\n- 选页使用活动页通知更新缩放状态，同章节翻页只刷新阅读器外壳及输入有效性，减少整个 Gallery 和阅读内容重建；同页回报不再重复保存进度，分别验证分页通知与视口交接的刷新次数，保留动画交接、章节边界、常亮、墨水屏与退出清理（#178）。\n- 主页导入漫画直接进入根阅读器，避免先创建带封面转场的详情页再立即替换；恢复进度使用当前窗口的历史库。历史、本地、追更、稍后阅读及网格封面使用独立且稳定的转场标识，避免同一本漫画在主页不同区域出现重复标识并留下封面占位（#129）。\n- 连续快速翻页在已有动画尚未完成时直接交接到目标页，避免音量键重复输入不断重启动画；保留旧动画完成的代次校验，墨水屏刷新按视口实际选中的页触发，覆盖正反向、横竖方向和单双页（#178）。\n- 连续与瀑布流恢复进度时保留尚未解码目标页的布局锚点，空闲状态下不按占位图尺寸改写页码，避免邻页先解码时将第 2 页推进到第 3 页；手动滚动与直接跳页仍可切换位置（#178）。\n- 合并重复的旧替代动画回归，在现有控制器交接测试中校验直接跳页、后续动画与迟到完成隔离；其余显式直跳、重置和异常路径的回归继续保留（#178）。\n- 图片收藏状态查询完成时只刷新可见的阅读菜单，隐藏菜单仍保留快捷收藏与失效后的重新查询，并暂停隐藏控件的动画，避免加载指示器持续产帧；同一帧的视口卸载／挂载通知合并发布，仅在最终视口所有者变化时更新菜单，减少阅读期间重复构建（#178）。\n- 阅读器及元数据加载入口铺满不透明的阅读背景，保留首帧、加载、错误重试和内容展示时的背景；阅读器控件在自身 Overlay 内获得 Material，避免依赖上级页面的背景与控件容器（#172）。\n\n### 收藏交互修复\n\n- 保存选中目录时保持收藏侧栏与内容区域的布局，正常写入不再插入临时进度行，避免切换目录时整个收藏区域上下跳动；保存失败仍显示重试，快速切换保留最终选择，退出仍等待已接受的保存（#188）。\n- 大规则集按大小写策略分组执行字面量预检查，精确标签及冒号后首段按索引匹配，减少首次进入或重新读取大收藏列表时逐本、逐规则重复扫描；命中后仍按原规则顺序、字段顺序和 Unicode 边界确定原因与原文位置。小规则集及首条规则的文本命中继续直接匹配，保留现有屏蔽范围（#167）。\n- 收藏搜索输入由页面保存，退出多选后保留检索词及对应结果，修复 Esc、关闭按钮或取消选择后输入框为空而列表仍在筛选的问题；退出搜索或切换目录时统一清空查询，返回输入框后可继续编辑，保留弹窗优先关闭的 Esc 顺序（#152）。\n- 收藏页与网格共用一份关键词屏蔽结果，按漫画快照缓存命中状态，搜索输入、退出搜索和阅读状态切换复用已匹配的漫画；规则或影响描述的显示设置变化时失效，保留屏蔽范围、隐藏数量、原因查看和可见项多选语义（#167）。\n- 阅读状态批量查询改在独立只读连接中执行，与历史写入共用数据访问顺序及关闭保护；按漫画 ID 与来源类型匹配，切换筛选复用完成状态，切换文件夹、历史库或连接后丢弃旧结果。等待和失败可见，查询失败可重试，页面构建不再同步查询整批历史（#167）。\n- 收藏页同时检查自身及外层导航路由，被详情或根阅读器覆盖时合并收藏通知，并延后异步列表与筛选结果的应用，返回后统一刷新。屏蔽规则后台变更只使缓存失效；保留明确的文件夹切换、已接受操作和后来选择的有效性检查（#167）。\n- 收藏页搜索、多选与普通模式保持相同页面结构，按列表、文件夹及选择的实际变化复用网格，避免键盘变化或空查询开关重建可见卡片；保留多次切换后的 Esc 退出与点击偏好菜单刷新。网格被详情或阅读器遮住时延后徽标查询，返回后读取最新进度，减少后台卡片构建（#167）。\n- 阅读状态筛选结果在进入／退出搜索时复用，搜索期间的历史变更仍使正常列表失效；收藏页被详情页遮住时延后整批进度筛选，返回后按最新进度刷新，减少后续阅读页面承担的后台查询（#167）。\n- 没有漫画屏蔽规则时跳过整批漫画元数据匹配，可见收藏直接复用列表；多选工具栏在打开具体操作时才复制漫画数据，仍在排队写入之前保留独立快照，减少进入收藏和多选时的同步工作（#167）。\n\n### 应用更新修复\n\n- 更新检查记录实际请求地址、原始异常、HTTP 状态及 GitHub 限流信息，避免日志只保留笼统的失败描述；手动检查区分连接、超时、限流和无效更新信息，并允许失败后重试（#186）。\n- 更新请求等待超过 30 秒时取消实际 HTTP 操作，并等待原生资源释放后结束；页面关闭和用户取消仍安静退出，保留稳定／预发布渠道及 TV、鸿蒙安装包筛选。\n\n### 开发维护\n\n- 发布与原包恢复流程按原提交中的鸿蒙分发配置选择必需任务；独立 Beta 模式禁止 HAP／设备报告进入普通正式版，普通平台仍须完整成功并逐包核对名称、大小与 SHA-256。历史随版 HAP 的源码、资产和真机报告门禁继续保留，新增分发及失败路径回归。\n- 阅读诊断升级至 schema 3，记录完整保留的逐帧 VSync／构建时间、音量键、动画交接、实际选页及四分之一页位置样本，同时记录缓存上限与占用；默认关闭并限制缓冲大小，旧动画完成不会写入新采集。复制预览保留 60,000 字符限制并分别统计省略的图片、帧及翻页样本，新增主动保存完整 JSON 报告，方便原 Android 120 Hz 设备对照连翻节奏（#178）。\n- PNG／JPEG 混合预缓存后的逐页裁剪回归改用最新窗口接口，补齐有界队列中的后续图片；测试退出同时取消并等待预缓存与图片工作，持续推进清理所需的帧，避免断言失败后卡住后续用例（#178）。\n- 用 #139 提供的两张原始 JPEG 复查白边检测，确认外侧扫描痕迹会阻止该侧裁剪，白边内的压缩灰点会提前限制范围。现有逐页入场回归加入 PNG／JPEG 混合预缓存，补齐深浅灰像素保护；更新中英文指南中的裁剪限制并移除过期的未发布标记，检测阈值与原图保持不变。\n- 漫画源事务中断探针通过标准输出管道发送 PID 和阶段信号，避免 Windows 在读取就绪文件时遇到跨进程占用；保留真实终止、活动所有者拒绝恢复和全部持久化恢复断言。\n- 清理已完成的测试整理、Issue 快照、依赖审计、历史操作与平台实验记录，将当前规则、依赖例外、鸿蒙长期目录条件和排障方法合并进现有指南；原始资料保留在 `v1.18.4-rc.3` 标签和 Git 历史中。\n- 精简发布准备与阅读诊断文档，更新文档索引、审计引用及中英文指南，修正漫画源、PDF 后台导入和收藏交互仍标为未发布的过期说明。\n- 退役已经由导入事务日志替代的旧目录替换工具及五项专属测试，更新架构基线，保留现行事务、真实中断恢复与历史漫画格式兼容回归。\n- 移除固定 QuickJS 已包含的重复数值缓冲实验补丁和 iOS 默认启动图模板说明，保留现行诊断探针、平台资源、许可证及构建输入。\n\n鸿蒙继续通过独立 Actions 工作流提供未签名 Beta 测试包：[HarmonyOS Beta](https://github.com/CyrilPeng/Venera-Next/actions/workflows/harmonyos-release.yml)。本次正式版不包含 HAP，鸿蒙设备验收仍待完成。",
-          "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.4/VeneraNext-ios-1.18.4%2B253.ipa",
-          "size": 21589601,
           "minOSVersion": "14.0"
         }
       ]
@@ -1986,17 +1752,6 @@
       "url": "https://github.com/thebcd69/bcd-games/releases/tag/v0.1.712"
     },
     {
-      "appID": "com.github.cyrilpeng.veneranext",
-      "title": "VeneraNext 1.18.4 · 23 Nov 2026",
-      "identifier": "VeneraNext-release-v1.18.4",
-      "caption": "VeneraNext 1.18.4 is available.",
-      "date": "2026-11-23T03:27:29Z",
-      "tintColor": "#2090E0",
-      "imageURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Venera-Next/images/news.webp",
-      "notify": true,
-      "url": "https://github.com/CyrilPeng/Venera-Next/releases/tag/v1.18.4"
-    },
-    {
       "appID": "org.moviepilot.app",
       "title": "MoviePilot 2.0.2 · 23 Nov 2026",
       "identifier": "MoviePilot-release-v2.0.2",
@@ -2107,17 +1862,6 @@
       "url": "https://github.com/kolbicz/WQFiles/releases/tag/v0.9.20"
     },
     {
-      "appID": "com.zephyr.breeze",
-      "title": "Breeze 3.1.0 · 21 Nov 2026",
-      "identifier": "Breeze-release-v3.1.0",
-      "caption": "Breeze 3.1.0 is available.",
-      "date": "2026-11-21T13:52:36Z",
-      "tintColor": "#E03030",
-      "imageURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Breeze/images/news.webp",
-      "notify": true,
-      "url": "https://github.com/breeze-project-org/Breeze/releases/tag/v3.1.0"
-    },
-    {
       "appID": "com.huamu013.ZhihuMinusMinus",
       "title": "ZhihuMinusMinus 0.10.0 · 21 Nov 2026",
       "identifier": "ZhihuMinusMinus-release-v0.10.0",
@@ -2160,17 +1904,6 @@
       "imageURL": "https://raw.githubusercontent.com/bebound/AltGallery/master/apps/LiveContainer+SideStore/images/news.webp",
       "notify": true,
       "url": "https://github.com/LiveContainer/LiveContainer/releases/tag/nightly"
-    },
-    {
-      "appID": "io.nekohasekai.screensharing",
-      "title": "Open Screen Sharing 1.0.8 · 20 Nov 2026",
-      "identifier": "Open Screen Sharing-release-v1.0.8",
-      "caption": "Open Screen Sharing 1.0.8 is available.",
-      "date": "2026-11-20T13:51:14Z",
-      "tintColor": "#1060F0",
-      "imageURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/OpenScreenSharing/images/news.webp",
-      "notify": true,
-      "url": "https://github.com/nekohasekai/open-screen-sharing/releases/tag/v1.0.8"
     },
     {
       "appID": "com.wqguard.app",
@@ -2360,17 +2093,6 @@
       "url": "https://github.com/huamidev/GestaltX/releases/tag/v1.1.1"
     },
     {
-      "appID": "com.aigch.OpenParsec",
-      "title": "OpenParsec 2.0.0 · 13 Nov 2026",
-      "identifier": "OpenParsec-release-2.0.0",
-      "caption": "OpenParsec 2.0.0 is available.",
-      "date": "2026-11-13T07:02:53Z",
-      "tintColor": "#BB01F0",
-      "imageURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/OpenParsec/images/news.webp",
-      "notify": true,
-      "url": "https://github.com/hugeBlack/OpenParsec/releases/tag/2.0.0"
-    },
-    {
       "appID": "com.zhangfuhao.wqtoolkit",
       "title": "WQToolkit 1.0 · 11 Nov 2026",
       "identifier": "WQToolkit-release-v1.0",
@@ -2402,17 +2124,6 @@
       "imageURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/RushHours/images/news.webp",
       "notify": true,
       "url": "https://github.com/ekomlenovic/rush_hour_ios_android/releases/tag/v2.2.2-b70"
-    },
-    {
-      "appID": "ani.aayush262.dartotsu",
-      "title": "Dartotsu 1.2.1 · 10 Nov 2026",
-      "identifier": "Dartotsu-release-v1.2.1",
-      "caption": "Dartotsu 1.2.1 is available.",
-      "date": "2026-11-10T09:17:52Z",
-      "tintColor": "#20C0F0",
-      "imageURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Dartotsu/images/news.webp",
-      "notify": true,
-      "url": "https://github.com/aayush2622/Dartotsu/releases/tag/v1.2.1"
     },
     {
       "appID": "com.md3music.md3music",
@@ -2459,17 +2170,6 @@
       "url": "https://github.com/lpfoj/lsx4/releases/tag/ios-jit-128.9934"
     },
     {
-      "appID": "com.suwayomi.tachideskSorayomi",
-      "title": "Tsumiru 1.6.5 · 07 Nov 2026",
-      "identifier": "Tsumiru-release-v1.6.5",
-      "caption": "Tsumiru 1.6.5 is available.",
-      "date": "2026-11-07T23:44:29Z",
-      "tintColor": "#7c7bff",
-      "imageURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Suwayomi-Tsumiru/images/news.webp",
-      "notify": true,
-      "url": "https://github.com/Suwayomi/Suwayomi-Tsumiru/releases/tag/v1.6.5"
-    },
-    {
       "appID": "org.zhaohe.MiniWatts",
       "title": "MiniWatts 1.7.0 · 07 Nov 2026",
       "identifier": "MiniWatts-release-v1.7.0",
@@ -2512,17 +2212,6 @@
       "imageURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Madeira/images/news.webp",
       "notify": true,
       "url": "https://github.com/willfaust/Madeira/releases/tag/v0.2.0"
-    },
-    {
-      "appID": "com.silverphase.editor",
-      "title": "Silverphase 1.1.1 · 02 Nov 2026",
-      "identifier": "Silverphase-release-v1.1.1",
-      "caption": "Silverphase 1.1.1 is available.",
-      "date": "2026-11-02T16:14:09Z",
-      "tintColor": "#FF9F0A",
-      "imageURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Silverphase/images/news.webp",
-      "notify": true,
-      "url": "https://github.com/akinal5765-byte/Silverphase/releases/tag/v1.1.1"
     },
     {
       "appID": "dev.playport.app",
@@ -2613,28 +2302,6 @@
       "url": "https://github.com/dddevid/Musly/releases/tag/v2.0.3"
     },
     {
-      "appID": "app.lightnovel.shelf",
-      "title": "LightNovelShelf 1.13.2 · 18 Oct 2026",
-      "identifier": "LightNovelShelf-release-v1.13.2",
-      "caption": "LightNovelShelf 1.13.2 is available.",
-      "date": "2026-10-18T10:47:40Z",
-      "tintColor": "#4E4592",
-      "imageURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/LightNovelShelf/images/news.webp",
-      "notify": true,
-      "url": "https://github.com/LightNovelShelf/Flutter/releases/tag/v1.13.2"
-    },
-    {
-      "appID": "app.aidoku.Aidoku",
-      "title": "Aidoku 0.9 · 16 Oct 2026",
-      "identifier": "Aidoku-release-v0.9-4",
-      "caption": "Aidoku 0.9 is available.",
-      "date": "2026-10-16T22:25:27Z",
-      "tintColor": "#FF375F",
-      "imageURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Aidoku/images/news.webp",
-      "notify": true,
-      "url": "https://github.com/Aidoku/Aidoku/releases/tag/v0.9-4"
-    },
-    {
       "appID": "dev.infinityf4p.tiebapure",
       "title": "TiebaPure 1.4.15 · 10 Oct 2026",
       "identifier": "TiebaPure-release-v1.4.15",
@@ -2666,17 +2333,6 @@
       "imageURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/AniCh/images/news.webp",
       "notify": true,
       "url": "https://github.com/Sle2p/AniCh/releases/tag/1.5.27"
-    },
-    {
-      "appID": "com.mak5er.aircard",
-      "title": "AirCard-iOS 1.3.2 · 04 Oct 2026",
-      "identifier": "AirCard-iOS-release-v1.3.2",
-      "caption": "AirCard-iOS 1.3.2 is available.",
-      "date": "2026-10-04T12:22:53Z",
-      "tintColor": "#5020E0",
-      "imageURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/AirCard/images/news.webp",
-      "notify": true,
-      "url": "https://github.com/Mak5er/AirCard-iOS/releases/tag/v1.3.2"
     },
     {
       "appID": "software.iridium",
