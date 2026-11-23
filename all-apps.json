@@ -1,5 +1,5 @@
 {
-  "name": "Joy Gallery",
+  "name": "Joy",
   "subtitle": "Joy's AltStore / SideStore source",
   "description": "Static AltStore / SideStore source. App metadata, icons, screenshots and IPA download links are reused from public open-source projects (mirrored from AltGallery); replace them with your own before publishing.",
   "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/assets/icon.png",
@@ -2522,4 +2522,5 @@
       "url": "https://github.com/Mac-XK/KMusic/releases/tag/歌一刀2.3.0"
     }
   ]
+
 }
