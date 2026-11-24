@@ -1,4 +1,4 @@
-# Joy
+# Joy-Y
 
 Joy 的 AltStore / SideStore 静态软件源。
 
